@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from "../../components/navbar";
+import TopSection from "./topSection";
 
 const PageContainer = ({children}: any) => {
     return (
@@ -11,6 +12,7 @@ const HomePage = () => {
     return (
         <PageContainer>
             <Navbar/>
+            <TopSection/>
         </PageContainer>
     );
 }

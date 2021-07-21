@@ -1,39 +1,49 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/*top section media queries*/
+@media (min-width: 640px) {
+  .top-section-blob {
+    width: 40em;
+    max-height: 10em;
+    top: -16em;
+    right: -9em;
+    transform: rotate(-25deg);
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
+  .top-section-car {
+    height: 16em;
+    right: -6em;
+    top: -6em;
   }
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+@media (min-width: 1024px) {
+  .top-section-blob {
+    width: 50em;
+    max-height: 30em;
+    top: -15em;
+    right: -7em;
+    transform: rotate(-30deg);
+  }
+
+  .top-section-car {
+    height: 21em;
+    right: -8em;
+    top: -5em;
+  }
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
-}
+@media (min-width: 1200px) {
+  .top-section-blob {
+    width: 70em;
+    max-height: 30em;
+    top: -25em;
+    right: -15em;
+    transform: rotate(-20deg);
+  }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
+  .top-section-car {
+    height: 30em;
+    right: -12em;
+    top: -9em;
   }
 }
