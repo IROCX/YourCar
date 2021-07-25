@@ -1,7 +1,7 @@
 import React from 'react';
 import Blob from './../../../assets/images/blob.svg'
 import Car from './../../../assets/images/mclaren-orange-big.png'
-import styles from './styles.module.css'
+import Button from "../../components/Button";
 
 const LeftContainer = () => {
     return (
@@ -13,16 +13,20 @@ const LeftContainer = () => {
                 Always choose the best car from our local stores or order it remotely at the best price for you and get
                 the best quality cars for as long as you like
             </p>
+            <div className={'flex mt-4 flex-wrap'}>
+                <Button text={"Book Your Ride"}/>
+                <Button theme={"filled"} text={"Sell Your Car"}/>
+            </div>
         </div>
     )
 }
 const RightContainer = () => {
     return (
         <div className={'w-1/2 flex flex-col relative mt-20'}>
-            <div className={styles['top-section-blob']}>
-                <img src={Blob} style={{maxHeight: "max-content", width:"90%"}}/>
+            <div className={'top-section-blob'}>
+                <img src={Blob} style={{maxHeight: "max-content", width: "90%"}}/>
             </div>
-            <div className={styles["top-section-car"]}>
+            <div className={"top-section-car"}>
                 <img src={Car} className={'w-auto h-auto'} style={{maxWidth: "90%"}}/>
             </div>
         </div>

@@ -1,6 +1,9 @@
 import React from 'react';
 import Navbar from "../../components/navbar";
 import TopSection from "./topSection";
+import BookCard from "../../components/BookCard";
+import BookingSteps from "./bookingSteps";
+import AboutUs from "./aboutUs";
 
 const PageContainer = ({children}: any) => {
     return (
@@ -13,6 +16,9 @@ const HomePage = () => {
         <PageContainer>
             <Navbar/>
             <TopSection/>
+            <BookCard/>
+            <BookingSteps/>
+            <AboutUs/>
         </PageContainer>
     );
 }
