@@ -56,7 +56,6 @@ const styles = {
 
 const NavItem = ({menu, children}: any) => {
 
-    console.log(menu, children)
     return <li
         className={`text-xs md:text-base ${ menu?'text-white text-xl mb-3 focus:text-white':'text-black' } font-medium mr-3 md:mr-5 cursor-pointer transition duration-300 ease-in-out hover:text-gray-700`}>
         {children}

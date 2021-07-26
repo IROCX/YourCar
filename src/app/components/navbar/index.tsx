@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from "../logo";
 import NavMenu from "./navMenu";
+import CarLogoLight from './../../../assets/images/car-logo.png'
 
 const NavbarContainer = ({children}: any) => {
     return (
@@ -15,7 +16,7 @@ const NavbarContainer = ({children}: any) => {
 function Navbar() {
     return (
         <NavbarContainer>
-            <Logo/>
+            <Logo textColor={'black'} logo={CarLogoLight}/>
             <NavMenu/>
         </NavbarContainer>
     );

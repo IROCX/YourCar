@@ -4,6 +4,8 @@ import TopSection from "./topSection";
 import BookCard from "../../components/BookCard";
 import BookingSteps from "./bookingSteps";
 import AboutUs from "./aboutUs";
+import TopCars from "./topCars";
+import Footer from "./Footer";
 
 const PageContainer = ({children}: any) => {
     return (
@@ -19,6 +21,8 @@ const HomePage = () => {
             <BookCard/>
             <BookingSteps/>
             <AboutUs/>
+            <TopCars/>
+            <Footer/>
         </PageContainer>
     );
 }

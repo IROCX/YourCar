@@ -12,7 +12,7 @@ const AboutUsContainer = ({children}: ContainerProps) => {
 }
 const CarContainer = () => {
     return <div className={'flex flex-1 items-center justify-center h-60 -ml-2 mr-2 sm:mr-10 about-us-section-car'}>
-        <img src={Car} className={'w-auto h-auto'} style={{height: "100%"}}/>
+        <img src={Car} className={'w-full h-auto'} style={{width: "100%"}}/>
     </div>
 }
 

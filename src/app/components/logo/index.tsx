@@ -1,17 +1,18 @@
 import React from 'react';
-import CarLogo from './../../../assets/images/car-logo.png'
+import {ContainerProps, ILogoProps} from "../../../interfaces";
 
-const LogoContainer = ({children}: any) => {
-    return <div className={'flex items-center'}>{children}</div>
+const LogoContainer = ({children}: ContainerProps) => {
+    return <div className={'flex'}>{children}</div>
 }
 
-function Logo() {
+
+function Logo({textColor = 'black', logo}: ILogoProps) {
     return (
         <LogoContainer>
             <div className={'flex items-center h-6 md:h-9'}>
-                <img src={CarLogo} width={"auto"} height={"100%"} alt={'brand logo'}/>
+                <img src={logo} width={"auto"} height={"100%"} alt={'brand logo'}/>
             </div>
-            <div className={' flex items-center text-xl md:text-2xl font-bold text-black m-1'}>YourCar</div>
+            <div className={`flex text-xl md:text-2xl font-bold text-${textColor} m-1`}>YourCar</div>
         </LogoContainer>
     );
 }
